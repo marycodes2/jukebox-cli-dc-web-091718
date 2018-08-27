@@ -51,7 +51,6 @@ def play(my_songs)
     puts "Invalid input, please try again"
   end 
 end
-end
 
 def exit_jukebox
   puts "Goodbye"
