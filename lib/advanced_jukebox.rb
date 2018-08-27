@@ -5,7 +5,7 @@
 my_songs = {
 "Go Go GO" => '/home/marycodes2/jukebox-cli-dc-web-091718/audio/Emerald-Park/01.mp3',
 "LiberTeens" => '/home/marycodes2/jukebox-cli-dc-web-091718/audio/Emerald-Park/02.mp3',
-"Hamburg" =>  '/home/marycodes2/jukebox-cli-dc-web-091718/audio/Emerald-Park/03.mp3',
+"Hamburg" =>  'home/marycodes2/jukebox-cli-dc-web-091718/audio/Emerald-Park/03.mp3',
 "Guiding Light" => '/home/marycodes2/jukebox-cli-dc-web-091718/audio/Emerald-Park/04.mp3',
 "Wolf" => '/home/marycodes2/jukebox-cli-dc-web-091718/audio/Emerald-Park/05.mp3',
 "Blue" => '/home/marycodes2/jukebox-cli-dc-web-091718/jukebox-cli/audio/Emerald-Park/06.mp3',
