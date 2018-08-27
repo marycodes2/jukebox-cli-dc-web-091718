@@ -77,7 +77,3 @@ def run(songs)
       end
   end 
 end
-
-def testing_script
-  
-end
