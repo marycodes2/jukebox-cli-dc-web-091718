@@ -2,19 +2,22 @@
 #make sure to edit the value of each key to replace < path to this directory >
 #with the correct path to this directory on your computer
 
-# my_songs = {
-# "Go Go GO" => '< path to this directory >/jukebox-cli/audio/Emerald-Park/01.mp3',
-# "LiberTeens" => '< path to this directory >/jukebox-cli/audio/Emerald-Park/02.mp3',
-# "Hamburg" =>  '< path to this directory >/jukebox-cli/audio/Emerald-Park/03.mp3',
-# "Guiding Light" => '< path to this directory >/jukebox-cli/audio/Emerald-Park/04.mp3',
-# "Wolf" => '< path to this directory >/jukebox-cli/audio/Emerald-Park/05.mp3',
-# "Blue" => '< path to this directory >/jukebox-cli/audio/Emerald-Park/06.mp3',
-# "Graduation Failed" => '< path to this directory >/jukebox-cli/audio/Emerald-Park/07.mp3'
-# }
+my_songs = {
+"Go Go GO" => '/home/marycodes2/jukebox-cli-dc-web-091718/audio/Emerald-Park/01.mp3',
+"LiberTeens" => '/home/marycodes2/jukebox-cli-dc-web-091718/audio/Emerald-Park/02.mp3',
+"Hamburg" =>  '< /home/marycodes2/jukebox-cli-dc-web-091718/audio/Emerald-Park/03.mp3',
+"Guiding Light" => '/home/marycodes2/jukebox-cli-dc-web-091718/audio/Emerald-Park/04.mp3',
+"Wolf" => '/home/marycodes2/jukebox-cli-dc-web-091718/audio/Emerald-Park/05.mp3',
+"Blue" => '/home/marycodes2/jukebox-cli-dc-web-091718/jukebox-cli/audio/Emerald-Park/06.mp3',
+"Graduation Failed" => '/home/marycodes2/jukebox-cli-dc-web-091718/audio/Emerald-Park/07.mp3'
+}
 
 def help
-  #this method should be the same as in jukebox.rb
-
+  puts "I accept the following commands:
+- help : displays this help message
+- list : displays a list of songs you can play
+- play : lets you choose a song to play
+- exit : exits this program"
 end
 
 
@@ -37,9 +40,26 @@ def play(my_songs)
 end
 
 def exit_jukebox
-  #this method is the same as in jukebox.rb
-end
+  puts "Goodbye"
+end 
 
-def run(my_songs)
-  #this method is the same as in jukebox.rb
+def run(songs)
+  help
+  user_response = ""
+  until user_response == "exit" do
+    puts "Please enter a command:"
+    user_response = gets.chomp
+      if user_response == 'list'
+        list(songs)
+      elsif user_response == 'play'
+        play(songs)
+      elsif user_response == 'help'
+        help
+      elsif user_response == 'exit'
+        exit_jukebox
+        break
+       else
+         break
+      end
+  end 
 end
