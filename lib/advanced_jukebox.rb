@@ -80,5 +80,3 @@ end
 def testing_script
   system "open /home/marycodes2/jukebox-cli-dc-web-091718/audio/Emerald-Park/03.mp3"
 end
-
-testing_script
