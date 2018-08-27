@@ -41,6 +41,7 @@ def play(my_songs)
   #if it isn't, tell them their choice is invalid
   #if it is, play the song using the system 'open <file path>' syntax
   #get the file path of the song by looking it up in the my_songs hash
+  system "open /home/marycodes2/jukebox-cli-dc-web-091718/audio/Emerald-Park/03.mp3"
   puts "Please enter a song name or number:"
   user_choice = gets.chomp
   song_names = my_songs.keys
@@ -78,5 +79,5 @@ def run(songs)
 end
 
 def testing_script
-  system "open /home/marycodes2/jukebox-cli-dc-web-091718/audio/Emerald-Park/03.mp3"
+  
 end
