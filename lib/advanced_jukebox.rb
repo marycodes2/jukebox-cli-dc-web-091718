@@ -78,7 +78,7 @@ def run(songs)
 end
 
 def test
-  system "open /home/marycodes2/jukebox-cli-dc-web-091718/audio/Emerald-Park/"03.mp3
+  system "open /home/marycodes2/jukebox-cli-dc-web-091718/audio/Emerald-Park/03.mp3"
 end
 
 test
