@@ -30,7 +30,6 @@ def list(my_songs)
     correct_index = index + 1
     puts "#{correct_index}. #{song}"
   end
-  
 end
 
 
