@@ -46,7 +46,7 @@ def play(my_songs)
   song_names = my_songs.keys
   if song_names.include? user_choice
     puts "Playing #{user_choice}"
-    
+    system "open #{my_songs[user_choice]}" 
   else
     puts "Invalid input, please try again"
   end 
